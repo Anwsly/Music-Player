@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" id="viewport"/>
+	<title>AW Music</title>
+	<link rel="stylesheet" type="text/css" href="style/myStyle.css">
+	<style type="text/css">
+		@font-face{
+		font-family:'xiaoqiang';
+		src:url('fonts/icomoon.eot');/*IE9*/
+		src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),/*IE6-IE8*/
+		url('fonts/icomoon.woff')format('woff'),/*chrome、firefox*/
+		url('fonts/icomoon.ttf')format('truetype'),/*chrome、firefox、opera、Safari、Android、iOS4.2+*/
+		url('fonts/icomoon.svg#uxiconfont')format('svg');/*iOS4.1-*/
+		}
+
+
+	</style>
+	<script type="text/javascript" src="js/device.js"></script>
+	<script type="text/javascript" src="js/pc.js"></script>
+</head>
+<body>
+<!--
+<h1 id="shuchu"></h1>
+-->
+	<script type="text/javascript">
+		//检测浏览器宽度
+		kuandu();
+		window.onresize=kuandu;
+		function kuandu(){
+			var myh1=document.getElementById("shuchu");
+		//	myh1.innerHTML=document.documentElement.clientWidth;
+		}
+		//更换样式表
+		function change(){
+			var kuandu=document.documentElement.clientWidth;
+			if(kuandu>683){
+
+			}
+		}
+	    //设备检测
+		if(device.mobile()){
+			window.location="html/phone.html";
+		}
+	
+		
+		
+	</script>
+	<div id="header"></div>
+	<div id="mainbody">
+		<div class="player_box">
+			<div class="player_box_left">
+				<iframe src="html/first.html" frameborder="no" 	 scrolling="no" id="ifr"></iframe>
+			</div>
+			<!--
+			<div class="player_box_right"></div>
+			-->
+			<div class="player_box_bottom">
+				<dl class="musicList">
+					<dt class="listName">
+						<div class="listTitle">播放列表</div>
+					</dt>
+					<dd class="listContent">
+						<ol>
+							<li onmouseover="Ctr()">
+								<span class="listNum">1</span>
+								<a title="Battles and Wastelands" class="musicName">Battles and Wastelands-Neo Retros</a>
+								<div class="startPlay" id="playOne">
+									<a  href="#"  onclick="ok()"></a>
+								</div>
+							</li>
+							<li onmouseover="">
+								<span class="listNum">2</span>
+								<a title="热河" class="musicName">热河-李志</a>
+								<div class="startPlay">
+									<a href="#" onclick="ok2()"></a>
+								</div>
+
+							</li>
+							<li onmouseover="">
+								<span class="listNum">3</span>
+								<a  title="Papa Was a Rodeo" class="musicName">Papa Was a Rodeo-Sara Lov</a>
+								<div class="startPlay">
+									<a href="#" onclick="ok3()"></a>
+								</div>
+
+							</li>
+							<li onmouseover="">
+								<span class="listNum">4</span>
+								<a title="秦皇岛" class="musicName">秦皇岛-万能青年旅店</a>
+								<div class="startPlay">
+									<a href="#" onclick="ok4()"></a>
+								</div>
+
+							</li>
+						</ol>
+					</dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<p>All&nbsp;&nbsp;by&nbsp;&nbsp;Anwsly</p>
+	</div>
+	
+</body>
+</html>

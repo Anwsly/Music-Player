@@ -1,0 +1,160 @@
+body,div,p,h1,h2,span,dl,dt,ol,li{
+	margin:0px;
+	padding:0;
+}
+body{
+	
+}
+#header{
+	width:100%;
+	height:60px;
+	box-shadow:0px 2px 10px #E4E0E0;
+}
+#mainbody{
+	width:100%;
+	background:white;
+}
+#footer{
+	width:100%;
+}
+#footer p{
+	margin-top:80px;
+	text-align:center;
+	font-family:'楷体';
+	font-size:15px;
+}
+#ifr{
+	 width:100%;
+	 height:100%;
+
+}
+.player_box{
+	width:50%;
+	height:450px;
+	line-height:450px;
+	margin:10px auto;
+}
+.player_box_left{
+	width:100%;
+	height:60%;
+
+	float:left;
+	box-sizing:border-box;
+
+}
+.player_box_bottom{
+	background:#FFFFFF;
+	width:100%;
+	height:50%;
+	box-shadow:0px 5px 6px #A6A3A3;
+	-webkit-border-radius-top-left:2px; 
+	-webkit-border-radius-top-right:2px;
+	clear:both;
+	z-index: 1;
+}
+/*播放列表样式*/
+.musicList{
+	height: 100%;
+	clear:both;
+	box-sizing:border-box;
+	
+}
+.musicList .listTitle{
+	width:100%;
+	height:40px;
+	line-height: 40px;
+	text-align: center;
+}
+.listName{
+	background:white;
+	height:40px;
+	clear:both;
+
+}
+.musicList ol{
+	margin-right:35px;
+	box-sizing: border-box;
+}
+.musicList ol li{
+	border-top:1px solid #F2F2F2;
+	width:100%;
+	list-style:outside none none;
+	height: 32px;
+	line-height: 32px;
+	margin-top:5px;
+	transition: background-color 1s linear,
+	border-top 0s linear,
+	transform 0.45s linear,
+	color 0.45s linear,
+	border-radius 0.05s linear; 
+	font-size: 18px;
+	font-family: '楷体',Helvetica,sans-serif;
+	/*ie*/
+	-ms-transition: background-color 1s linear,
+	border-top 0s linear,
+	-ms-transform 0.45s linear,
+	color 0.45s linear,
+	-ms-border-radius 0.05s linear; 
+	font-size: 18px;
+	
+}
+
+.musicList ol li:hover{
+	box-shadow:0px 1px 3px #535050;
+	transform:translate(-3px,0px) scale(1.11);
+	/*ie*/
+	-ms-transform:-ms-translate(-3px,0px) scale(1.11);
+	background-color:#868383;
+	color:white;
+	border-top: none;
+	border-radius:20px;
+
+}
+.musicList ol li:hover .startPlay a{
+	color:white;
+}
+
+.musicList ol li .musicName{
+	text-decoration: none;
+	width:100px;
+}
+.musicList ol .startPlay {
+	font-family:'xiaoqiang';
+	font-size:20px;
+	color:#7F7F7F;
+	float:right;
+	width:32px;
+	height:32px;
+	line-height: 32;
+	margin-top:0px;
+	box-sizing:border-box;
+	transition: transform 0.5s linear;
+	-ms-transition: -ms-transform 0.5s linear;
+}
+.musicList ol li .startPlay:hover{
+	transform:translate(-23px,0px) rotate(360deg) scale(1.1);
+	text-shadow:0px 2px 3px #9C9A9A;
+	-ms-transform:translate(-23px,0px) rotate(360deg) scale(1.1);
+	-ms-text-shadow:0px 2px 3px #9C9A9A;
+}
+
+
+.musicList ol .startPlay a{
+	text-decoration:none;
+	height:32px;
+	line-height: 32px;
+	float:left;
+	color:#C3C3C3;
+	transition:transform 0.5s linear,text-shadow 0.5s linear;
+	-ms-transition:-ms-transform 0.5s linear,-ms-text-shadow 0.5s linear;
+
+
+}
+.listTitle{
+	font-size:20px;
+	font-family:'楷体',Helvetica,sans-serif;
+	background:#E2E2E2;
+}
+.musicList .listNum{
+	
+}
